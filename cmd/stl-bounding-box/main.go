@@ -24,9 +24,9 @@ func main() {
 	width, height, depth := bbox.Dimensions()
 
 	fmt.Printf("Bounding Box:\n")
-	fmt.Printf("  Min: (%.2f, %.2f, %.2f)\n", bbox.MinX, bbox.MinY, bbox.MinZ)
-	fmt.Printf("  Max: (%.2f, %.2f, %.2f)\n", bbox.MaxX, bbox.MaxY, bbox.MaxZ)
-	fmt.Printf("  Dimensions: (%.2f, %.2f, %.2f)\n", width, height, depth)
-	fmt.Printf("  Center: (%.2f, %.2f, %.2f)\n", bbox.Center.X, bbox.Center.Y, bbox.Center.Z)
-	fmt.Printf("  Volume: %.2f\n", bbox.Volume())
+	fmt.Printf("  Min: (%.5f, %.5f, %.5f)\n", bbox.MinX, bbox.MinY, bbox.MinZ)
+	fmt.Printf("  Max: (%.5f, %.5f, %.5f)\n", bbox.MaxX, bbox.MaxY, bbox.MaxZ)
+	fmt.Printf("  Dimensions: (%.5f, %.5f, %.5f)\n", width, height, depth)
+	fmt.Printf("  Center: (%.5f, %.5f, %.5f)\n", bbox.Center.X, bbox.Center.Y, bbox.Center.Z)
+	fmt.Printf("  Volume: %.5f\n", bbox.Volume())
 }
